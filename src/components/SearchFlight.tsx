@@ -13,33 +13,33 @@ const SearchFlight: React.FC = () => {
         It's more than just a trip
       </h1>
       <div className="relative bg-white w-full shadow-lg flex items-center">
-        <div className="border border-gray-300 relative flex items-center w-64 rounded-tl-sm rounded-bl-sm">
+        <div className="border border-gray-300 relative flex items-center w-64 rounded-tl-sm rounded-bl-sm text-gray-500">
           <FaPlaneDeparture className="absolute left-3 text-gray-500 w-10" />
           <input
             placeholder="From where?"
-            className="pl-13 pr-4 py-3 w-full outline-none text-gray-500"
+            className="pl-13 pr-4 py-3 w-full outline-none"
           />
         </div>
-        <div className="border border-gray-300 relative flex items-center w-64">
+        <div className="border border-gray-300 relative flex items-center w-64 text-gray-500">
           <FaPlaneArrival className="absolute left-3 text-gray-500 w-10" />
           <input
             placeholder="To where?"
-            className="pl-13 pr-4 py-3 w-full outline-none text-gray-500"
+            className="pl-13 pr-4 py-3 w-full outline-none"
           />
         </div>
-        <div className="border border-gray-300 relative flex items-center w-64">
+        <div className="border border-gray-300 relative flex items-center w-64 text-gray-500">
           <FaCalendarAlt className="absolute left-3 text-gray-500 w-10" />
           <input
             type="text"
-            className="pl-13 pr-4 py-3 w-full outline-none text-gray-500"
+            className="pl-13 pr-4 py-3 w-full outline-none"
             placeholder="Depart - Return"
           />
         </div>
-        <div className="border border-gray-300 relative flex items-center w-64">
+        <div className="border border-gray-300 relative flex items-center w-64 text-gray-500">
           <FaUsers className="absolute left-3 text-gray-500 w-10" />
           <input
             placeholder="Passengers"
-            className="pl-13 pr-4 py-3 w-full outline-none text-gray-500"
+            className="pl-13 pr-4 py-3 w-full outline-none"
           />
         </div>
         <button className="border-1 border-indigo-500 w-32 bg-indigo-500 text-white rounded-sm p-3 cursor-pointer hover:scale-101">

@@ -6,7 +6,7 @@ import SignUp from "./SignUp";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [signIn, setSignIn] = useState(false);
+  const [signUp, setSignUp] = useState(false);
 
   return (
     <>
@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
           </li>
           <li
             className="bg-indigo-500 px-6 py-3 rounded-md cursor-pointer duration-300 hover:scale-101"
-            onClick={() => setSignIn(true)}
+            onClick={() => setSignUp(true)}
           >
             <NavLink to="/" className="text-base font-medium text-white">
               Sign up
@@ -109,7 +109,7 @@ const Navbar: React.FC = () => {
             </li>
             <li
               className="bg-indigo-500 px-6 py-3 rounded-md cursor-pointer duration-300 hover:scale-101 text-center w-1/3 mx-auto"
-              onClick={() => setSignIn(true)}
+              onClick={() => setSignUp(true)}
             >
               <NavLink to="/" className="text-base font-medium text-white">
                 Sign up
@@ -118,7 +118,7 @@ const Navbar: React.FC = () => {
           </ul>
         </div>
       </nav>
-      {signIn && <SignUp signIn={signIn} setSignIn={setSignIn} />}
+      {signUp && <SignUp signUp={signUp} setSignUp={setSignUp} />}
     </>
   );
 };

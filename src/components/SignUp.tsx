@@ -1,18 +1,18 @@
 import { X } from "lucide-react";
 
 interface SignUpProps {
-  signIn: boolean;
-  setSignIn: (value: boolean) => void;
+  signUp: boolean;
+  setSignUp: (value: boolean) => void;
 }
 
-const SignUp: React.FC<SignUpProps> = ({ signIn, setSignIn }) => {
+const SignUp: React.FC<SignUpProps> = ({ signUp, setSignUp }) => {
 
   return (
-    <div className={`${signIn ? "block" : "hidden"} fixed inset-5 md:inset-20 flex items-center justify-center z-50`}>
-      <div className="relative w-full md:w-[75%] lg:w-[40%] p-6 bg-white rounded-md shadow-xl text-gray-500 border border-gray-300">
+    <div className={`${signUp ? "block" : "hidden"} fixed inset-5 md:inset-20 flex items-center justify-center z-50`}>
+      <div className="relative w-full md:w-[75%] lg:w-[40%] py-6 px-8 bg-white rounded-md shadow-xl text-gray-500 border border-gray-300">
         <div className="flex justify-between items-center">
           <h2 className="text-2xl font-medium">Sign up for Tripma</h2>
-          <button className="text-gray-400 cursor-pointer" onClick={() => setSignIn(false)}>
+          <button className="text-gray-400 cursor-pointer" onClick={() => setSignUp(false)}>
             <X size={24} />
           </button>
         </div>
@@ -50,11 +50,11 @@ const SignUp: React.FC<SignUpProps> = ({ signIn, setSignIn }) => {
           </label>
         </div>
 
-        <button className="w-full bg-indigo-500 text-white font-semibold py-3 rounded-md mt-4 hover:scale-101 cursor-pointer">
+        <button className="w-full bg-indigo-500 text-white font-semibold py-2.75 rounded-md mt-4 hover:scale-101 cursor-pointer">
           Create Account
         </button>
 
-        <div className="relative flex py-5 items-center">
+        <div className="relative flex py-3 items-center">
           <div className="flex-grow border-t border-gray-300"></div>
           <span className="flex-shrink mx-4 text-gray-400">or</span>
           <div className="flex-grow border-t border-gray-300"></div>

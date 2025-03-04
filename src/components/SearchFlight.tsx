@@ -2,7 +2,7 @@ import { FaPlaneDeparture, FaPlaneArrival, FaCalendarAlt, FaUsers } from "react-
 
 const SearchFlight: React.FC = () => {
   return (
-    <div className="relative h-screen w-full px-6 pt-16">
+    <div className="relative lg:h-screen w-full px-6 pt-16 mb-15 lg:mb-0">
       <div className="absolute inset-0 bg-[url('/map_bg.png')] bg-cover bg-center opacity-25"></div>
       <h1 className="relative text-5xl md:text-7xl lg:text-8xl font-bold bg-[url('/text_bg.png')] bg-clip-text text-transparent bg-center bg-cover w-4/5 md:w-2/4 text-center mx-auto mb-10 lg:h-52">
         It's more than just a trip

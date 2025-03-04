@@ -8,7 +8,7 @@ import google from "../assets/google_play.png";
 const Footer: React.FC = () => {
   return (
     <footer className="bg-white w-full text-gray-500">
-      <div className="border-b-2 border-gray-300 flex flex-col lg:flex-row px-6 md:px-20 py-10 text-sm/8 space-y-6 md:space-y-0 text-center lg:text-left sm:text-sm/10">
+      <div className="border-b border-gray-300 flex flex-col lg:flex-row px-6 md:px-20 py-10 text-sm/8 space-y-6 md:space-y-0 text-center lg:text-left sm:text-sm/10">
         <div className="w-full lg:w-1/5 text-center">
           <img src={logo} alt="logo" className="cursor-pointer w-32 mx-auto md:mb-2 lg:mx-0" />
         </div>

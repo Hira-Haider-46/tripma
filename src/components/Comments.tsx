@@ -6,7 +6,7 @@ import star_1 from "../assets/star_1.png";
 
 const Comments: React.FC = () => {
   return (
-    <div className="p-6 md:p-10 text-gray-500">
+    <div className="p-6 md:p-10 text-gray-500 mb-10">
       <h1 className="text-center my-5 font-semibold text-2xl">
         What <span className="text-indigo-500">Tripma</span> users are saying
       </h1>
@@ -34,9 +34,9 @@ const Comments: React.FC = () => {
               <p>{comment.location}</p>
               <div className="flex flex-row my-2 gap-1">
                 {Array.from({ length: Math.floor(comment.stars) }, (_, i) => (
-                  <img key={i} src={star} alt="star" className="w-5 h-5" />
+                  <img key={i} src={star} alt="star" />
                 ))}
-                {comment.stars % 1 !== 0 && <img src={star_1} alt="half star" className="w-5 h-5" />}
+                {comment.stars % 1 !== 0 && <img src={star_1} alt="star" />}
               </div>
               <p className="text-gray-800 text-sm">{comment.review}</p>
             </div>

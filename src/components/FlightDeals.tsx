@@ -126,7 +126,7 @@ const FlightDeals: React.FC = () => {
           </div>
         ))}
       </div>
-      <button className="block text-white bg-indigo-500 px-6 py-3 rounded-md cursor-pointer duration-300 hover:scale-101 text-center w-1/2 md:w-1/3 lg:w-1/5 mx-auto mt-10 mb-5">Explore more stays</button>
+      <button className="block text-white bg-indigo-500 px-6 py-3 rounded-md cursor-pointer duration-300 hover:scale-101 hover:bg-white hover:text-indigo-500 hover:border hover:border-indigo-500 text-center w-1/2 md:w-1/3 lg:w-1/5 mx-auto mt-10 mb-5">Explore more stays</button>
     </div>
   );
 };

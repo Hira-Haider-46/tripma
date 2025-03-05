@@ -1,24 +1,24 @@
 import { X } from "lucide-react";
 
-interface SignUpProps {
-  signUp: boolean;
-  setSignUp: (value: boolean) => void;
+interface SignInProps {
+  signIn: boolean;
+  setSignIn: (value: boolean) => void;
 }
 
-const SignUp: React.FC<SignUpProps> = ({ signUp, setSignUp }) => {
+const SignIn: React.FC<SignInProps> = ({ signIn, setSignIn }) => {
 
   return (
-    <div className={`${signUp ? "block" : "hidden"} fixed inset-5 md:inset-20 flex items-center justify-center z-50`}>
+    <div className={`${signIn ? "block" : "hidden"} fixed inset-5 md:inset-20 flex items-center justify-center z-50`}>
       <div className="relative w-full md:w-[75%] lg:w-[40%] py-6 px-8 bg-white rounded-md shadow-xl text-gray-500 border border-gray-300">
         <div className="flex justify-between items-center">
-          <h2 className="text-2xl font-medium">Sign up for Tripma</h2>
-          <button className="text-gray-400 cursor-pointer" onClick={() => setSignUp(false)}>
+          <h2 className="text-2xl font-medium">Sign In for Tripma</h2>
+          <button className="text-gray-400 cursor-pointer" onClick={() => setSignIn(false)}>
             <X size={24} />
           </button>
         </div>
 
         <p className="text-sm mt-2">
-          Tripma is totally free to use. Sign up using your email or phone number below.
+          Sign in to access your Tripma account and manage your trips.
         </p>
 
         <div className="mt-4">
@@ -36,22 +36,8 @@ const SignUp: React.FC<SignUpProps> = ({ signUp, setSignUp }) => {
           />
         </div>
 
-        <div className="mt-4 flex items-center">
-          <input type="checkbox" id="terms" className="mr-2 cursor-pointer" />
-          <label htmlFor="terms" className="text-gray-600 text-sm">
-            I agree to the{" "}
-            <span className="text-indigo-500">terms and conditions</span>
-          </label>
-        </div>
-        <div className="mt-2 flex items-center">
-          <input type="checkbox" id="alerts" className="mr-2 cursor-pointer" />
-          <label htmlFor="alerts" className="text-gray-600 text-sm">
-            Send me the latest deal alerts
-          </label>
-        </div>
-
         <button className="w-full bg-indigo-500 text-white font-semibold py-2.75 rounded-md mt-4 hover:scale-101 cursor-pointer hover:bg-white hover:text-indigo-500 hover:border border-indigo-500 duration-300">
-          Create Account
+          Sign In
         </button>
 
         <div className="relative flex py-3 items-center">
@@ -79,4 +65,4 @@ const SignUp: React.FC<SignUpProps> = ({ signUp, setSignUp }) => {
   );
 };
 
-export default SignUp;
+export default SignIn;

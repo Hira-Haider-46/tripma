@@ -3,10 +3,12 @@ import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/logo.png";
 import SignUp from "./SignUp";
+import SignIn from "./SignIn";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [signUp, setSignUp] = useState(false);
+  const [signIn, setSignIn] = useState(false);
 
   return (
     <>
@@ -42,7 +44,7 @@ const Navbar: React.FC = () => {
               Packages
             </NavLink>
           </li>
-          <li className="mt-2.5">
+          <li className="mt-2.5" onClick={() => setSignIn(true)}>
             <NavLink
               to="/"
               className="text-base font-normal text-gray-500 duration-300 hover:text-indigo-500 hover:font-bold"
@@ -51,10 +53,10 @@ const Navbar: React.FC = () => {
             </NavLink>
           </li>
           <li
-            className="bg-indigo-500 px-6 py-3 rounded-md cursor-pointer duration-300 hover:scale-101"
+            className="text-white bg-indigo-500 px-6 py-3 rounded-md cursor-pointer duration-300 hover:scale-101 hover:bg-white hover:text-indigo-500 hover:border border-indigo-500"
             onClick={() => setSignUp(true)}
           >
-            <NavLink to="/" className="text-base font-medium text-white">
+            <NavLink to="/" className="text-base font-medium">
               Sign up
             </NavLink>
           </li>
@@ -108,10 +110,10 @@ const Navbar: React.FC = () => {
               </NavLink>
             </li>
             <li
-              className="bg-indigo-500 px-6 py-3 rounded-md cursor-pointer duration-300 hover:scale-101 text-center w-1/3 mx-auto"
+              className="text-white bg-indigo-500 px-6 py-3 rounded-md cursor-pointer duration-300 hover:scale-101 text-center w-1/3 mx-auto border-none hover:bg-white hover:text-indigo-500 hover:border border-indigo-500"
               onClick={() => setSignUp(true)}
             >
-              <NavLink to="/" className="text-base font-medium text-white">
+              <NavLink to="/" className="text-base font-medium">
                 Sign up
               </NavLink>
             </li>
@@ -119,6 +121,7 @@ const Navbar: React.FC = () => {
         </div>
       </nav>
       {signUp && <SignUp signUp={signUp} setSignUp={setSignUp} />}
+      {signIn && <SignIn signIn={signIn} setSignIn={setSignIn} />}
     </>
   );
 };

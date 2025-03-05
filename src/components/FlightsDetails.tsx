@@ -1,14 +1,10 @@
-import {
-  FaPlaneDeparture,
-  FaPlaneArrival,
-  FaCalendarAlt,
-  FaUsers,
-} from "react-icons/fa";
+import { FaPlaneDeparture, FaPlaneArrival, FaCalendarAlt, FaUsers } from "react-icons/fa";
+import flight_logo from "../assets/flight_logo.png";
 
 const FlightsDetails: React.FC = () => {
   return (
-    <div className="p-10 flex flex-row">
-      <div className="w-3/5">
+    <div className="p-10 flex flex-col lg:flex-row">
+      <div className="w-full lg:w-3/5">
         <div className="w-full mx-auto flex flex-wrap lg:flex-nowrap items-center gap-4 lg:gap-0 text-gray-500 lg:shadow-xs text-sm">
           <div className="relative flex items-center w-full lg:w-64 border border-gray-300 px-3 py-2.5 lg:rounded-tl-sm lg:rounded-bl-sm bg-white rounded-sm lg:rounded-none">
             <FaPlaneDeparture className="absolute left-2.75 w-3.5 h-3.5" />
@@ -56,6 +52,103 @@ const FlightsDetails: React.FC = () => {
               </div>
             )
           )}
+        </div>
+        <div className="text-gray-500 mt-8">
+          <p className="font-semibold">
+            Choose a <span className="text-indigo-500">departing</span> flight
+          </p>
+          <div className="border border-gray-300 pb-4 px-3 my-4 rounded-md max-h-[400px] overflow-y-auto pt-2">
+            {[
+              {
+                logo: flight_logo,
+                duration: "16h 45m",
+                airline: "Hawaiian Airlines",
+                time: "7:00AM - 4:15PM",
+                stops: "1 stop",
+                layover: "2h 45m in HNL",
+                price: "$624",
+                tripType: "round trip",
+              },
+              {
+                logo: flight_logo,
+                duration: "16h 45m",
+                airline: "Hawaiian Airlines",
+                time: "7:00AM - 4:15PM",
+                stops: "1 stop",
+                layover: "2h 45m in HNL",
+                price: "$624",
+                tripType: "round trip",
+              },
+              {
+                logo: flight_logo,
+                duration: "16h 45m",
+                airline: "Hawaiian Airlines",
+                time: "7:00AM - 4:15PM",
+                stops: "1 stop",
+                layover: "2h 45m in HNL",
+                price: "$624",
+                tripType: "round trip",
+              },
+              {
+                logo: flight_logo,
+                duration: "16h 45m",
+                airline: "Hawaiian Airlines",
+                time: "7:00AM - 4:15PM",
+                stops: "1 stop",
+                layover: "2h 45m in HNL",
+                price: "$624",
+                tripType: "round trip",
+              },
+              {
+                logo: flight_logo,
+                duration: "16h 45m",
+                airline: "Hawaiian Airlines",
+                time: "7:00AM - 4:15PM",
+                stops: "1 stop",
+                layover: "2h 45m in HNL",
+                price: "$624",
+                tripType: "round trip",
+              },
+              {
+                logo: flight_logo,
+                duration: "14h 30m",
+                airline: "American Airlines",
+                time: "8:30AM - 10:00PM",
+                stops: "Non-stop",
+                layover: "-",
+                price: "$720",
+                tripType: "round trip",
+              },
+            ].map((flight, index) => (
+              <div
+                key={index}
+                className="flex flex-wrap lg:flex-row border-b border-gray-300 cursor-pointer hover:bg-gray-100 duration-300 transition-all px-3 pb-3 pt-2"
+              >
+                <div className="w-1/2 sm:w-1/3 border-b border-gray-200 md:border-none md:w-1/5 lg:w-[8%] p-3 flex items-center">
+                  <img
+                    src={flight.logo}
+                    alt="flight_logo"
+                    className="w-10 h-10"
+                  />
+                </div>
+                <div className="w-1/2 sm:w-1/3 border-b border-gray-200 md:border-none md:w-1/5 lg:w-[23%] flex flex-col justify-center px-3 pb-3 pt-2 text-center lg:text-left">
+                  <p className="text-gray-700">{flight.duration}</p>
+                  <p className="text-gray-500 text-sm">{flight.airline}</p>
+                </div>
+                <div className="w-1/2 sm:w-1/3 border-b border-gray-200 md:border-none md:w-1/5 lg:w-[23%] text-gray-700 px-3 pb-3 pt-2 text-center lg:text-left">
+                  <p>{flight.time}</p>
+                </div>
+                <div className="w-1/2 sm:w-1/3 border-b border-gray-200 md:border-none md:w-1/5 lg:w-[23%] flex flex-col justify-center px-3 pb-3 pt-2 text-center lg:text-right">
+                  <p className="text-gray-700">{flight.stops}</p>
+                  <p className="text-gray-500 text-sm">{flight.layover}</p>
+                </div>
+                <div className="w-1/2 sm:w-1/3 border-b border-gray-200 md:border-none md:w-1/5 lg:w-[23%] flex flex-col justify-center px-3 pb-3 pt-2 text-center lg:text-right">
+                  <p className="text-gray-700">{flight.price}</p>
+                  <p className="text-gray-500 text-sm">{flight.tripType}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

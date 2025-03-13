@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
           <li className="mt-2.5">
             <NavLink
               to="/"
-              className="text-base font-normal text-gray-500 duration-300 hover:text-indigo-500 hover:font-bold"
+              className="text-base font-normal text-gray-500 duration-300 hover:text-indigo-500"
             >
               Flights
             </NavLink>
@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
           <li className="mt-2.5">
             <NavLink
               to="/"
-              className="text-base font-normal text-gray-500 duration-300 hover:text-indigo-500 hover:font-bold"
+              className="text-base font-normal text-gray-500 duration-300 hover:text-indigo-500"
             >
               Hotels
             </NavLink>
@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
           <li className="mt-2.5">
             <NavLink
               to="/"
-              className="text-base font-normal text-gray-500 duration-300 hover:text-indigo-500 hover:font-bold"
+              className="text-base font-normal text-gray-500 duration-300 hover:text-indigo-500"
             >
               Packages
             </NavLink>
@@ -47,13 +47,13 @@ const Navbar: React.FC = () => {
           <li className="mt-2.5" onClick={() => setSignIn(true)}>
             <NavLink
               to="/"
-              className="text-base font-normal text-gray-500 duration-300 hover:text-indigo-500 hover:font-bold"
+              className="text-base font-normal text-gray-500 duration-300 hover:text-indigo-500"
             >
               Sign in
             </NavLink>
           </li>
           <li
-            className="text-white bg-indigo-500 px-6 py-3 rounded-md cursor-pointer duration-300 hover:scale-101 hover:bg-white hover:text-indigo-500 hover:border border-indigo-500"
+            className="text-white bg-indigo-500 px-6 py-3 rounded-md cursor-pointer duration-300 hover:bg-white hover:text-indigo-500 border border-white hover:border-indigo-500"
             onClick={() => setSignUp(true)}
           >
             <NavLink to="/" className="text-base font-medium">

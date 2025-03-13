@@ -203,25 +203,50 @@ const FlightsDetails: React.FC = () => {
           <button className="block text-indigo-500 bg-white px-5 py-2.5 rounded-md cursor-pointer duration-300 hover:scale-101 hover:bg-indigo-500 hover:text-white border border-indigo-500 text-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 float-right mt-5 mb-7">
             Show all flights
           </button>
-          <img src={map} alt="map" className="hidden md:block" />
+          <img src={map} alt="map" className="hidden md:block w-full" />
         </div>
-        <div className="w-full lg:w-2/5 mt-10 lg:mt-0">
-          <div className="lg:pl-15 lg:mt-35 text-gray-500">
-            <div className="border rounded-md p-5 border-gray-300 my-4"></div>
-            <div className="border p-5 text-gray-900">
-              <div>
-                <p>Subtotal</p>
-                <p>Taxes and Fees</p>
-                <p>Total</p>
-              </div>
-              <div>
-                <p>$503</p>
-                <p>$121</p>
-                <p>$624</p>
+        <div className="lg:w-2/5 mt-10 lg:mt-0">
+          <div className="lg:pl-15 lg:mt-43 text-gray-500">
+            <div className="border rounded-lg border-gray-300 bg-white px-2 sm:px-5 mb-5 w-full lg:w-[95%] lg:mx-auto">
+              <div className="w-full lg:w-[95%] lg:mx-auto py-3 flex items-center flex-row justify-between text-sm sm:text-base border-b border-gray-300">
+                <div className="w-[15%] lg:w-[22%] sm:flex justify-center lg:justify-start">
+                  <img
+                    src={flight_logo}
+                    alt="flight_logo"
+                    className="w-8 sm:w-12 h-auto"
+                  />
+                </div>
+                <div className="w-[41%] lg:w-[38%] flex flex-col justify-center text-left">
+                  <p className="text-gray-800">Hawaiian Airlines</p>
+                  <p className="text-gray-500">FIG4312</p>
+                </div>
+                <div className="w-[41%] lg:w-[38%] flex flex-col justify-center text-right">
+                  <p className="text-gray-800">16h 45m (+1d)</p>
+                  <p className="text-gray-800">7:00 AM - 4:15 PM</p>
+                  <p className="text-gray-500">2h 45m in HNL</p>
+                </div>
               </div>
             </div>
-            <button className="block text-indigo-500 bg-white px-5 py-2.5 rounded-md cursor-pointer duration-300 hover:scale-101 hover:bg-indigo-500 hover:text-white border border-indigo-500 text-center w-full sm:w-1/2 md:w-1/3 float-right mt-5 mb-7">
+
+            <div className="text-gray-900 bg-white flex flex-col items-end w-full text-right text-sm/4 md:text-base/6 md:pr-5">
+              <div className="flex flex-row w-full sm:w-1/2">
+                <p className="w-2/3">Subtotal</p>
+                <p className="w-1/3">$503</p>
+              </div>
+              <div className="flex flex-row w-full sm:w-1/2">
+                <p className="w-2/3">Taxes and Fees</p>
+                <p className="w-1/3">$121</p>
+              </div>
+              <div className="flex flex-row w-full sm:w-1/2">
+                <p className="w-2/3">Total</p>
+                <p className="w-1/3">$624</p>
+              </div>
+            </div>
+            {/* <button className="block text-indigo-500 bg-white px-5 py-2.5 rounded-md cursor-pointer duration-300 hover:scale-101 hover:bg-indigo-500 hover:text-white border border-indigo-500 text-center w-full sm:w-1/2 md:w-1/3 float-right mt-8 mb-7 mr-5">
               Save and Close
+            </button> */}
+            <button className="block hover:text-indigo-500 hover:bg-white px-5 py-2.5 rounded-md cursor-pointer duration-300 hover:scale-101 bg-indigo-500 text-white border border-indigo-500 text-center w-full sm:w-1/2 float-right mt-8 mb-7 md:mr-5">
+              Passenger Information
             </button>
             {/* <h2 className="text-base font-semibold text-gray-500 mb-4">
               Price grid <span className="text-gray-400">(flexible dates)</span>

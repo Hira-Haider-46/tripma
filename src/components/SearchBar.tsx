@@ -1,9 +1,4 @@
-import {
-  FaPlaneDeparture,
-  FaPlaneArrival,
-  FaCalendarAlt,
-  FaUsers,
-} from "react-icons/fa";
+import { FaPlaneDeparture, FaPlaneArrival, FaCalendarAlt, FaUsers } from "react-icons/fa";
 
 const SearchBar: React.FC = () => {
   return (

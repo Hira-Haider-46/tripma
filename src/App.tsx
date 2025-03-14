@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import FlightsDetails from "./components/FlightsDetails";
+import FlightsDetails from "./pages/FlightsDetails";
 import Footer from "./components/Footer";
 
 const App: React.FC = () => {

@@ -37,9 +37,9 @@ const SelectedFlightsInfo: React.FC = () => {
           <p className="w-1/3">$624</p>
         </div>
       </div>
-      <button className="block text-indigo-500 bg-white px-5 py-2.5 rounded-md cursor-pointer duration-300 hover:scale-101 hover:bg-indigo-500 hover:text-white border border-indigo-500 text-center w-full sm:w-1/2 md:w-1/3 mt-8 mb-7 mr-5">
+      {/* <button className="block text-indigo-500 bg-white px-5 py-2.5 rounded-md cursor-pointer duration-300 hover:scale-101 hover:bg-indigo-500 hover:text-white border border-indigo-500 text-center w-full sm:w-1/2 md:w-1/3 mt-8 mb-7 mr-5">
         Save and Close
-      </button>
+      </button> */}
       {/* <button className="block hover:text-indigo-500 hover:bg-white px-5 py-2.5 rounded-md cursor-pointer duration-300 hover:scale-101 bg-indigo-500 text-white border border-indigo-500 text-center w-full sm:w-1/2 mt-8 mb-7 md:mr-5">
         Passenger Information
       </button> */}

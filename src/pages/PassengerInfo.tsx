@@ -147,7 +147,7 @@ const PassengerInfo: React.FC = () => {
       </div>
       <div className="w-full md:w-2/5 md:pt-42 flex flex-col items-center sm:items-end justify-between">
         <SelectedFlightsInfo />
-        <button className="block text-indigo-500 bg-white px-5 py-2.5 rounded-md cursor-pointer duration-300 hover:scale-101 hover:bg-indigo-500 hover:text-white border border-indigo-500 text-center w-full sm:w-1/2 lg:w-1/3 my-12">
+        <button className="block text-indigo-500 bg-white px-5 py-2.5 rounded-md cursor-pointer duration-300 hover:scale-101 hover:bg-indigo-500 hover:text-white border border-indigo-500 text-center w-full sm:w-1/2 lg:w-1/3 my-12 mr-6">
           Select seats
         </button>
         <img src={bag} alt="bag" className="mt-10 mb-5" />

@@ -1,12 +1,12 @@
 import Navbar from "./components/Navbar";
-import PassengerInfo from "./pages/PassengerInfo";
+import PaymentMethod from "./pages/PaymentMethod";
 import Footer from "./components/Footer";
 
 const App: React.FC = () => {
   return (
     <>
       <Navbar />
-      <PassengerInfo />
+      <PaymentMethod />
       <Footer />
     </>
   );

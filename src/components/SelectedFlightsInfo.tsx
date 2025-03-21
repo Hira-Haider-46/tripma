@@ -25,6 +25,10 @@ const SelectedFlightsInfo: React.FC = () => {
       </div>
       <div className="text-gray-900 bg-white flex flex-col items-end w-full text-right text-sm/4 md:text-base/6 md:pr-5">
         <div className="flex flex-row w-full sm:w-1/2">
+          <p className="w-2/3">Seat upgrade</p>
+          <p className="w-1/3">$199</p>
+        </div>
+        <div className="flex flex-row w-full sm:w-1/2">
           <p className="w-2/3">Subtotal</p>
           <p className="w-1/3">$503</p>
         </div>

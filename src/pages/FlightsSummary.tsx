@@ -2,11 +2,12 @@ import { X } from "lucide-react";
 import flight_logo from "../assets/flight_logo.png";
 import cc from "../assets/cc.png";
 import map from "../assets/flight_map_2.png";
+import card from "../assets/card_2.png";
 
 const FlightsSummary: React.FC = () => {
   return (
     <div className="flex flex-col lg:flex-row gap-5">
-      <div className="w-full lg:w-3/5 px-10 md:px-20 py-10">
+      <div className="w-full lg:w-[64%] px-10 md:px-20 py-10">
         <div className="border border-[#007B65] flex flex-row justify-between items-center p-5 bg-[#EAFFFB] rounded-lg mb-8">
           <p className="text-[#007B65] text-sm">
             Your flight has been booked successfully! Your confirmation number
@@ -167,10 +168,63 @@ const FlightsSummary: React.FC = () => {
           <h1 className="text-gray-500 font-medium text-2xl my-5">
             Flight Route
           </h1>
-          <img src={map} alt="map" className="w-full"/>
+          <img src={map} alt="map" className="w-full" />
         </div>
       </div>
-      <div className="w-full lg:w-2/5"></div>
+      <div className="w-full lg:w-[36%] py-8 px-10 md:pl-10 lg:pr-15">
+        <h1 className="text-gray-500 font-medium text-2xl mb-3">
+          Shop <span className="text-indigo-500">hotels</span>
+        </h1>
+        <p className="text-gray-400">
+          Tripma partners with thousands of hotels to get you the best deal.
+          Save up to 30% when you add a hotel to your trip.
+        </p>
+        <div className="mt-4 flex flex-col">
+          <div className="rounded-xl shadow-lg cursor-pointer hover:scale-99 duration-300 w-[96%] pb-3 my-3.5">
+            <img
+              src={card}
+              alt="card"
+              className="rounded-t-xl w-full h-45 sm:h-65 md:h-80 lg:h-60 object-cover"
+            />
+            <div className="flex justify-between items-center px-4 pt-4 font-semibold text-gray-500">
+              <p>Ryokan Japan</p>
+              <p>$439</p>
+            </div>
+            <p className="mt-1 text-sm text-gray-400 px-4">
+              Enjoy views of the garden from your room
+            </p>
+          </div>
+          <button className="block text-indigo-500 bg-white px-5 py-2.5 rounded-md cursor-pointer duration-300 hover:scale-101 hover:bg-indigo-500 hover:text-white border border-indigo-500 text-center w-3/4 sm:w-1/2 md:w-1/3 lg:w-1/2 mx-auto my-5">
+            Shop all hotels
+          </button>
+        </div>
+        <h1 className="text-gray-500 font-medium text-2xl mt-6 mb-3">
+          Find unique <span className="text-indigo-500">experiences</span>
+        </h1>
+        <p className="text-gray-400">
+          Find events and authentic cultrual experiences available exclusively
+          to Tripma users.
+        </p>
+        <div className="mt-4 flex flex-col">
+          <div className="rounded-xl shadow-lg cursor-pointer hover:scale-99 duration-300 w-[96%] pb-3 my-3.5">
+            <img
+              src={card}
+              alt="card"
+              className="rounded-t-xl w-full h-45 sm:h-65 md:h-80 lg:h-60 object-cover"
+            />
+            <div className="flex justify-between items-center px-4 pt-4 font-semibold text-gray-500">
+              <p>Ryokan Japan</p>
+              <p>$439</p>
+            </div>
+            <p className="mt-1 text-sm text-gray-400 px-4">
+              Enjoy views of the garden from your room
+            </p>
+          </div>
+          <button className="block text-indigo-500 bg-white px-5 py-2.5 rounded-md cursor-pointer duration-300 hover:scale-101 hover:bg-indigo-500 hover:text-white border border-indigo-500 text-center w-3/4 sm:w-1/2 md:w-1/3 lg:w-1/2 mx-auto my-5">
+            View all experiences
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

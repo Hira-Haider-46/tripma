@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/logo.png";
+import pp from "../assets/Avatar.png";
 import SignUp from "../pages/SignUp";
 import SignIn from "../pages/SignIn";
 
@@ -44,22 +45,38 @@ const Navbar: React.FC = () => {
               Packages
             </NavLink>
           </li>
-          <li className="mt-2.5" onClick={() => setSignIn(true)}>
+          {/* <li className="mt-2.5" onClick={() => setSignIn(true)}>
             <NavLink
               to="/"
               className="text-base font-normal text-gray-500 duration-300 hover:text-indigo-500"
             >
               Sign in
             </NavLink>
+          </li> */}
+          <li className="mt-2.5">
+            <NavLink
+              to="/"
+              className="text-base font-normal text-gray-500 duration-300 hover:text-indigo-500"
+            >
+              My Trips
+            </NavLink>
           </li>
-          <li
+          <li className="cursor-pointer">
+            <NavLink
+              to="/"
+              className="rounded-[50%]"
+            >
+              <img src={pp} alt="profile_picture" />
+            </NavLink>
+          </li>
+          {/* <li
             className="text-white bg-indigo-500 px-6 py-3 rounded-md cursor-pointer duration-300 hover:bg-white hover:text-indigo-500 border border-white hover:border-indigo-500"
             onClick={() => setSignUp(true)}
           >
             <NavLink to="/" className="text-base font-medium">
               Sign up
             </NavLink>
-          </li>
+          </li> */}
         </ul>
         <button
           className="md:hidden block text-gray-700"

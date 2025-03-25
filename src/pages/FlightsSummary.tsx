@@ -1,5 +1,7 @@
 import { X } from "lucide-react";
 import flight_logo from "../assets/flight_logo.png";
+import cc from "../assets/cc.png";
+import map from "../assets/flight_map_2.png";
 
 const FlightsSummary: React.FC = () => {
   return (
@@ -128,6 +130,44 @@ const FlightsSummary: React.FC = () => {
               <p className="w-1/2 text-right">$624</p>
             </div>
           </div>
+        </div>
+        <div className="my-8">
+          <h1 className="text-gray-500 font-medium text-2xl mb-7">
+            Payment method
+          </h1>
+          <img src={cc} alt="credit_card" />
+        </div>
+        <div className="my-8">
+          <h1 className="text-gray-500 font-medium text-2xl">
+            Share your travel itinerary
+          </h1>
+          <p className="text-gray-400 my-2">
+            You can email your itinerary to anyone by entering their email
+            address here.
+          </p>
+          <div className="w-full sm:w-4/6">
+            <div className="flex flex-col gap-5 my-6 text-gray-500">
+              <input
+                type="text"
+                placeholder="Email address"
+                className="w-full border border-gray-400 px-3 py-2 rounded-sm outline-none"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col sm:flex-row gap-5 w-full md:w-3/5 items-center my-10">
+          <button className="block hover:text-indigo-500 hover:bg-white px-5 py-2.5 rounded-md cursor-pointer duration-300 hover:scale-101 bg-indigo-500 text-white border border-indigo-500 text-center w-full sm:w-1/2">
+            Email itinerary
+          </button>
+          <button className="block text-indigo-500 bg-white px-5 py-2.5 rounded-md cursor-pointer duration-300 hover:scale-101 hover:border hover:border-indigo-500 text-center w-full sm:w-1/2">
+            Add another
+          </button>
+        </div>
+        <div className="my-8">
+          <h1 className="text-gray-500 font-medium text-2xl my-5">
+            Flight Route
+          </h1>
+          <img src={map} alt="map" className="w-full"/>
         </div>
       </div>
       <div className="w-full lg:w-2/5"></div>

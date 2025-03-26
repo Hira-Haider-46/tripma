@@ -1,13 +1,9 @@
-import Navbar from "./components/Navbar";
-import FlightsSummary from "./pages/FlightsSummary";
-import Footer from "./components/Footer";
+import SeatBooking from "./pages/SeatBooking";
 
 const App: React.FC = () => {
   return (
     <>
-      <Navbar />
-      <FlightsSummary />
-      <Footer />
+      <SeatBooking />
     </>
   );
 };

@@ -5,11 +5,11 @@ import SearchFlight from "../components/SearchFlight";
 const Home: React.FC = () => {
   return (
     <>
-        <SearchFlight />
-        <FlightDeals />
-        <Comments />
+      <SearchFlight />
+      <FlightDeals />
+      <Comments />
     </>
-  )
-}
+  );
+};
 
 export default Home;

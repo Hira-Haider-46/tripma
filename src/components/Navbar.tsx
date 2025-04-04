@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/logo.png";
 import pp from "../assets/Avatar.png";
-import SignUp from "../pages/SignUp";
-import SignIn from "../pages/SignIn";
+import SignUp from "./SignUp";
+import SignIn from "./SignIn";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
